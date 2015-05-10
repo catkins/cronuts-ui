@@ -1,51 +1,13 @@
-<!-- Header -->
-<div class="row">
-  <div class="large-3 columns">
-    <h1><img src="https://placehold.it/400x100&text=Cronuts"/></h1>
-  </div>
-  <div class="large-9 columns">
-    <ul class="inline-list right">
-      <li><a href="#">Create new Task</a></li>
-      <li><a href="#">Sign out</a></li>
-    </ul>
-  </div>
-</div>
+{{x-header}}
 
 <div class="row">
-
-
   <!-- Content -->
   <div class="large-9 push-3 columns">
     {{outlet}}
   </div>
 
 
-  <!--  Sidebar -->
-  <div class="large-3 pull-9 columns">
-
-    <ul class="side-nav">
-      <li><a href="#">Tasks</a></li>
-      <li><a href="#">Create new Task</a></li>
-    </ul>
-  </div>
-
+  {{x-sidebar}}
 </div>
 
-
-
-
-<footer class="row">
-  <div class="large-12 columns">
-    <hr/>
-    <div class="row">
-      <div class="large-6 columns">
-        <p>© Copyright no one at all. Go to town.</p>
-      </div>
-      <div class="large-6 columns">
-        <ul class="inline-list right">
-          <li><a href="#">Tasks</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+{{x-footer class="row"}}
