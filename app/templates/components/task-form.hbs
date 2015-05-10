@@ -1,0 +1,30 @@
+<form>
+  <div class="row">
+    <div class="large-3 columns">
+      <label> Frequency
+        {{view 'select' content=frequencies value=selectedFrequency }}
+      </label>
+    </div>
+
+    <div class="large-3 end columns">
+      <label> Unit
+        {{view 'select' content=units value=selectedUnit  }}
+      </label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <label> Script
+        {{textarea value=task.script cols="80" rows="25" class="task-script"}}
+      </label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <button class="expand" {{action "saveTask"}}> Save</button>
+    </div>
+  </div>
+
+</form>

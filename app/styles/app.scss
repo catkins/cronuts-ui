@@ -1,3 +1,7 @@
 @import "settings";
 
 @import "foundation";
+
+textarea.task-script {
+  font-family: $code-font-family;
+}
