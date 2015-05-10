@@ -19,6 +19,17 @@ module.exports = function(environment) {
     }
   };
 
+  // set up CSP rules
+  ENV.contentSecurityPolicy = {
+    'default-src': "'none'",
+    'script-src': "'self'",
+    'font-src': "'self'",
+    'connect-src': "'self'",
+    'img-src': "'self' https://placehold.it",
+    'style-src': "'self'",
+    'media-src': "'self'"
+  }
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
